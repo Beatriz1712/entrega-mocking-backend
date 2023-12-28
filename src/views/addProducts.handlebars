@@ -1,0 +1,34 @@
+<form method="POST" action="/api/products">
+    <label for="title">Nombre del Producto</label>
+    <input type="text" name="title">
+
+    <label for="description">Descripción del Producto</label>
+    <input type="text" name="description">
+
+    <label for="price">Precio Unidad</label>
+    <input type="number" name="price">
+
+    <label for="stock">Stock actual</label>
+    <input type="number" name="stock">
+
+    <label for="category">Categoria</label>
+    <select name="category">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+    <label for="thumbnail">Foto del Producto</label>
+    <input type="text" name="thumbnail">
+
+
+
+    <button type="submit">Registrar producto</button>
+</form>
+
+</div>
+
+<a href="/api/products"><h3>Volver a todos los productos</h3></a>
+
+<link rel="stylesheet" type="text/css" href="/css/style.css" />

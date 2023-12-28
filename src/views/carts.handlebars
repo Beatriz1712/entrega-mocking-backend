@@ -1,0 +1,11 @@
+{{#if cart}}
+  {{#each cart}}
+    <p>Id: {{this.productId}} - Cantidad: {{this.quantity}} Uds</p>
+  {{/each}}
+{{else}}
+  <p>El carrito está vacío.</p>
+{{/if}}
+
+<a href="/api/products"><h3>Volver a todos los productos</h3></a>
+
+<link rel="stylesheet" type="text/css" href="/css/style.css" />

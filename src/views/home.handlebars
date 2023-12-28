@@ -1,0 +1,20 @@
+
+<h1>Bienvenido {{user.first_name}} {{user.last_name}}</h1>
+<p>Rol: {{user.role}}</>
+
+<p><a href="/addProducts" class="boton">Agregar otro producto</a></p>
+
+{{#each products}}
+  <div class="divProducto">
+    <h2>{{this.title}}</h2>
+    <p>{{this._id}}</p>
+    <p>Descripcion: {{this.description}} </p>
+    <p>Precio:  ${{this.price}} </p>
+    <p>Categoria: {{this.category}} </p>
+    <p>Stock: {{this.stock}} </p>
+    <img src={{this.thumbnail}} alt="" />
+    <a href="/api/products/{{this._id}}" class="boton"><h3>Ver producto</h3></a>
+  </div>
+{{/each}}
+
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
